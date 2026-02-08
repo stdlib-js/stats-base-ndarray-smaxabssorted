@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import smaxabssorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-smaxabssorted@esm/index.mjs';
+import smaxabssorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-smaxabssorted@v0.1.1-esm/index.mjs';
 ```
 
 #### smaxabssorted( arrays )
@@ -100,7 +100,7 @@ The function has the following parameters:
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-linspace@esm/index.mjs';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import smaxabssorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-smaxabssorted@esm/index.mjs';
+import smaxabssorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-smaxabssorted@v0.1.1-esm/index.mjs';
 
 var xbuf = linspace( -50, 50, 10, {
     'dtype': 'float32'
