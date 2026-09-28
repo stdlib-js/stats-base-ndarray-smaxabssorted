@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,42 +16,35 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { float32ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the maximum absolute value of a sorted one-dimensional single-precision floating-point ndarray.
+* Computes the maximum absolute value of a sorted one-dimensional single-precision floating-point ndarray.
 *
-* @module @stdlib/stats-base-ndarray-smaxabssorted
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
+* @returns maximum absolute value
 *
 * @example
 * var Float32Vector = require( '@stdlib/ndarray-vector-float32' );
-* var smaxabssorted = require( '@stdlib/stats-base-ndarray-smaxabssorted' );
 *
 * var x = new Float32Vector( [ -4.0, -1.0, 2.0, 3.0 ] );
 *
 * var v = smaxabssorted( [ x ] );
 * // returns 4.0
 */
-
-// MODULES //
-
-var join = require( 'path' ).join;
-var tryRequire = require( '@stdlib/utils-try-require' );
-var isError = require( '@stdlib/assert-is-error' );
-var main = require( './main.js' );
-
-
-// MAIN //
-
-var smaxabssorted;
-var tmp = tryRequire( join( __dirname, './native.js' ) );
-if ( isError( tmp ) ) {
-	smaxabssorted = main;
-} else {
-	smaxabssorted = tmp;
-}
+declare function smaxabssorted( arrays: [ float32ndarray ] ): number;
 
 
 // EXPORTS //
 
-module.exports = smaxabssorted;
+export = smaxabssorted;
